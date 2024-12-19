@@ -5,6 +5,10 @@ body {
     font-family: "Montserrat", sans-serif; 
 }
 
+p {
+    color: #666; 
+}
+
 /* Styles for header section */
 
 header {
@@ -78,6 +82,7 @@ header li:hover {
     /* background-image: url("https://img.static-kl.com/images/media/028AE86F-56BE-4562-A68B64D8F2EB2AA7"); 
     background-size: cover; */
     margin-top: 5em; 
+    border-bottom: solid 1px black; 
 }
 
 /* Skills Section */ 
@@ -112,7 +117,7 @@ header li:hover {
     font-weight: bold; 
 }
 
-#github-link {
+.link-button {
     font-size: 1.2rem; 
     margin: 4rem; 
     border-radius: 0.5em; 
@@ -131,6 +136,31 @@ footer {
     flex-direction: column; 
     text-align: center; 
     padding: 2em; 
+}
+
+/* Dropdown styling */
+
+.dropdown-content {
+    color: #666;
+    font-size: 0.9em;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.dropdown {
+    cursor: pointer;
+    position: relative;
+    padding: 0.5em 0;
+}
+
+.dropdown::after {
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.dropdown.active::after {
+    transform: rotate(180deg); 
 }
 
 /* Determines size for images with .image class across the entire site to keep sizing consistent */ 
