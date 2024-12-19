@@ -14,17 +14,17 @@ header {
 
 
 header h1 {
-    margin-left: 2rem;
+    margin-left: 1em;
 }
 
 header ul {
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 header li {
     display: inline-flex; 
-    margin-left: 1rem; 
-    margin-right: 1rem; 
+    margin-left: 1em; 
+    margin-right: 1em; 
 }
 
 .image-text-section {
@@ -32,7 +32,7 @@ header li {
     justify-content: space-around; /* try space around later */
     width: 60%; 
     align-items: center;
-    margin: 8rem auto; 
+    margin: 8em auto; 
     position: relative; 
     left: 50%;
     transform: translateX(-50%);
@@ -47,6 +47,10 @@ header li {
 .project-boxes {
     display: inline-flex; 
     justify-content: space-around; 
+}
+
+.project-box {
+    max-width: 24em; 
 }
 
 .project-desc-heading {
