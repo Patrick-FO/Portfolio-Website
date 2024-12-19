@@ -4,6 +4,8 @@ body {
     font-size: 16px; 
 }
 
+/* Styles for header section */
+
 header {
     border-bottom: solid black 1px; 
     width: 100%; 
@@ -27,9 +29,11 @@ header li {
     margin-right: 1em; 
 }
 
+/* Sections for "About Me" and "Skills" */
+
 .image-text-section {
     display: inline-flex;
-    justify-content: space-around; /* try space around later */
+    justify-content: space-around; 
     width: 60%; 
     align-items: center;
     margin: 8em auto; 
@@ -37,6 +41,8 @@ header li {
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* Projects section */
 
 .projects {
     display: flex; 
@@ -65,14 +71,18 @@ header li {
     align-self: center;
 }
 
-.image {
-    max-width: 24rem; 
-    height: auto; 
-}
+/* Contact Me section, footer */
 
 footer {
     display: flex; 
     flex-direction: column; 
     text-align: center; 
     padding: 2em; 
+}
+
+/* Determines size for images with .image class across the entire site to keep sizing consistent */ 
+
+.image {
+    max-width: 24rem; 
+    height: auto; 
 }
