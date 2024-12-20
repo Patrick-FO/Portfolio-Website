@@ -15,7 +15,7 @@ p {
 header {
     border-bottom: solid black 1px; 
     width: 100%; 
-    display: inline-flex;
+    display: inline-flex; 
     align-items: center;
     justify-content: space-between;
     position: fixed; 
@@ -178,7 +178,7 @@ footer {
         height: auto; 
         padding: 1em 0; 
         margin: 0; 
-        width: 100%; /* Could be 90% */ 
+        width: 100%; 
     }
 
     header h1 {
@@ -196,12 +196,6 @@ footer {
         margin: 0; 
         margin: 0 0.5em; 
     }
-
-    /* .image-text-section {
-        display: flex; 
-        flex-direction: column;
-        text-align: center; 
-    } */
 
     .image-text-section {
         display: flex; 
