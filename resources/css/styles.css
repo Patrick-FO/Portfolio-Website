@@ -1,3 +1,4 @@
+
 body {
     margin: 0; 
     padding: 0; 
@@ -20,22 +21,22 @@ header {
     position: fixed; 
     z-index: 10; 
     background-color: white; 
+    top: 0; 
+    height: 5em; 
 }
 
-
 header h1 {
-    margin-left: 1em; 
     font-family: "Oswald", sans-serif; 
+    margin: 0 1em; 
 }
 
 header ul {
-    margin-right: 1em;
+    margin: 0 1em; 
 }
 
 header li {
     display: inline-flex; 
-    margin-left: 1em; 
-    margin-right: 1em; 
+    margin: 0 1em; 
     text-decoration: underline; 
     color: black; 
 }
@@ -79,15 +80,9 @@ header li:hover {
 /* About me section */ 
 
 .about-me {
-    /* background-image: url("https://img.static-kl.com/images/media/028AE86F-56BE-4562-A68B64D8F2EB2AA7"); 
-    background-size: cover; */
-    margin-top: 5em; 
+    margin-top: 6em; 
     border-bottom: solid 1px black; 
 }
-
-/* Skills Section */ 
-
-
 
 /* Projects section */
 
@@ -168,4 +163,42 @@ footer {
 .image {
     max-width: 24rem; 
     height: auto; 
+}
+
+/* Media query for phones */ 
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        flex-direction: column; 
+        height: auto; 
+        padding: 1em; 
+    }
+
+    header h1 {
+        font-size: 1.75rem; 
+        margin: 0.25em; 
+        padding: 0; 
+    }
+
+    header ul {
+        margin: 0; 
+    }
+
+    header li {
+        margin: 0; 
+        margin: 0 0.5em; 
+    }
+
+    .image-text-section {
+        display: flex; 
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    .project-boxes {
+        display: flex; 
+        flex-direction: column; 
+    }
+
 }
