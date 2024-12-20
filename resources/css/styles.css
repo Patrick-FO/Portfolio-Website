@@ -59,6 +59,10 @@ header li:hover {
 }
 
 .image-text-section ul {
+    list-style: '▸';
+}
+
+/* .image-text-section ul {
     margin: 0.75em 0;
     padding: 0 1em;
     list-style: none;
@@ -75,7 +79,7 @@ header li:hover {
     left: -1em;
     top: 0.9em;
     position: relative;
-}
+} */
 
 /* About me section */ 
 
@@ -172,7 +176,9 @@ footer {
     header {
         flex-direction: column; 
         height: auto; 
-        padding: 1em; 
+        padding: 1em 0; 
+        margin: 0; 
+        width: 100%; /* Could be 90% */ 
     }
 
     header h1 {
@@ -183,6 +189,7 @@ footer {
 
     header ul {
         margin: 0; 
+        padding: 0; 
     }
 
     header li {
@@ -190,15 +197,78 @@ footer {
         margin: 0 0.5em; 
     }
 
+    /* .image-text-section {
+        display: flex; 
+        flex-direction: column;
+        text-align: center; 
+    } */
+
     .image-text-section {
         display: flex; 
         flex-direction: column;
         text-align: center; 
+        justify-content: center; 
+        width: 100%; 
+        align-items: center;
+        padding: 0; 
+        position: relative; 
+        transform: none; 
+        left: 0; 
+        padding: 4em 0; 
+    }
+
+    .image-text-section ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; 
+        list-style: '▸'; 
+    }
+    
+    .image-text-section li::before { 
+        content: none;
+        border-color: transparent #111;
+        border-style: solid;
+        border-width: 0;
+        display: block;
+        left: 0;
+        top: 0;
+        position: relative;
+    }
+
+    .skills {
+        margin-bottom: 4em; 
+        border-bottom: solid black 1px; 
+    }
+
+    .skills h2 {
+        margin-top: 4em; 
+    }
+
+    .projects {
+        padding-top: 2em; 
     }
 
     .project-boxes {
         display: flex; 
         flex-direction: column; 
+    }
+
+    .content-container {
+        width: 100%; 
+    }
+
+    .dropdown-content {
+        max-width: 80%; 
+    }
+
+    .dropdown li {
+        content: '▸';
+    }
+
+    .dropdown-h3 {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
     }
 
 }
